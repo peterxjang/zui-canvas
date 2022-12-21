@@ -1,8 +1,9 @@
 {
   "name": "zui-canvas",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "An HTML canvas with a zoomable user interface",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib/**/*"
   ],
@@ -11,8 +12,14 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "test": "jest --config jestconfig.json"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterxjang/zui-canvas.git"
+  },
+  "keywords": [
+    "canvas"
+  ],
+  "author": "peterxjang",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^4.9.4"
