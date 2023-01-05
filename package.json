@@ -11,7 +11,7 @@
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "test": "jest --config jestconfig.json",
-    "serve": "npm run build && ruby -run -ehttpd ./ -p8000",
+    "serve": "tsc -w & ruby -run -ehttpd ./ -p8000",
     "prepare": "npm run build",
     "prepublishOnly": "npm run test",
     "version": "npm run format && git add -A src",
