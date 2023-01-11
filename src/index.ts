@@ -23,6 +23,25 @@ export function initialize(fullscreen = false) {
     })
   }
   draw($canvas, ctx);
+  bindEvents(ctx);
+}
+
+function bindEvents(ctx: CanvasRenderingContext2D) {
+  const onInputDown = (event: MouseEvent) => {
+    console.log(event);
+  }
+
+  const onInputMove = (event: MouseEvent) => {
+    console.log(event);
+  }
+
+  const onInputUp = (event: MouseEvent) => {
+    console.log(event);
+  }
+
+  ctx.canvas.addEventListener("mousedown", onInputDown, false);
+  ctx.canvas.addEventListener("mousemove", onInputMove, false);
+  ctx.canvas.addEventListener("mouseup", onInputUp, false);
 }
 
 function draw(canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D) {
